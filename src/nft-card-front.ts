@@ -29,70 +29,60 @@ export class NftCardFrontTemplate extends LitElement {
       .card-front {
         position: absolute;
         backface-visibility: hidden;
-        background: #ffffff;
         border-radius: 5px;
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        position: relative;
+        grid-template-columns: auto;
         width: 100%;
         height: 100%;
         transform: translateY(0);
         overflow: hidden;
       }
       .is-vertical {
-        grid-template-columns: 100%;
-        grid-template-rows: 60% 40%;
+        
       }
       .card-front p {
         margin: 0;
       }
 
       .asset-image-container {
-        border-right: 1px solid #e2e6ef;
-        background-size: cover;
-        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
       }
 
       .asset-image {
-        background-size: contain;
-        background-position: 50%;
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         height: 100%;
-        box-sizing: border-box;
+        
       }
 
       .is-vertical .asset-image-container {
-        border-bottom: 1px solid #e2e6ef;
-        border-right: none;
         width: 100%;
       }
 
       .asset-details-container {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr;
-        padding: 20px;
-        align-items: center;
+        
       }
       .asset-detail {
-        display: flex;
+        <!-- display: flex; -->
       }
       .asset-detail .asset-detail-type {
-        height: 35px;
+        <!--  height: 35px;
         font-size: 12px;
-        margin-right: 10px;
+        margin-right: 10px; -->
       }
       .asset-detail .asset-detail-badge {
-        width: 54px;
+        <!-- width: 54px;
         height: 30px;
-        font-size: 12px;
+        font-size: 12px; -->
       }
       .asset-detail-name {
-        font-weight: 400;
-        text-align: left;
+        <!-- font-weight: 400;
+        text-align: left; -->
       }
       .asset-detail-price {
-        align-items: flex-end;
+        <!-- align-items: flex-end;
         font-size: 18px;
         font-weight: 400;
         display: flex;
@@ -100,35 +90,35 @@ export class NftCardFrontTemplate extends LitElement {
         justify-content: flex-end;
         line-height: 15px;
         text-align: right;
-        padding: 6px 0;
+        padding: 6px 0; -->
       }
       .asset-detail-price img {
-        margin: 0 4px;
+        <!--  margin: 0 4px; -->
       }
       .asset-detail-price-current img {
-        width: 15px;
+        <!--  width: 15px; -->
       }
       .asset-detail-price-previous {
-        font-size: 14px;
+        <!-- font-size: 14px;
         color: rgb(130, 130, 130);
-        line-height: 10px;
+        line-height: 10px; -->
       }
       .asset-detail-price-previous img {
-        width: 1ex;
+        <!--  width: 1ex; -->
       }
       .asset-detail-price .value {
-        margin-left: 5px;
+        <!--  margin-left: 5px; -->
       }
       .asset-detail-price .previous-value {
-        font-size: 14px;
-        color: #828282;
+        <!-- font-size: 14px;
+        color: #828282; -->
       }
       .asset-action-buy {
-        grid-column-start: 1;
-        grid-column-end: 3;
+        <!-- grid-column-start: 1;
+        grid-column-end: 3; -->
       }
       .asset-action-buy button {
-        width: 100%;
+        <!-- width: 100%;
         background: #3291e9;
         border-radius: 5px;
         height: 35px;
@@ -139,10 +129,10 @@ export class NftCardFrontTemplate extends LitElement {
         transition: 200ms;
         outline: none;
         border-style: none;
-        text-transform: uppercase;
+        text-transform: uppercase; -->
       }
       .asset-action-buy button:hover {
-        background: rgb(21, 61, 98);
+        <!-- background: rgb(21, 61, 98); -->
       }
       .asset-link {
         text-decoration: none;
@@ -204,17 +194,17 @@ export class NftCardFrontTemplate extends LitElement {
       <div class="card-front ${classMap({ 'is-vertical': !this.horizontal, 'is-flipped': this.flippedCard })}">
         ${this.asset.traits.length > 0
           ? html`
-              <info-button
+              <!-- <info-button
                 style="position: absolute; top: 5px; right: 5px"
                 @flip-event="${(e: any) => this.eventHandler(e, 'flip')}"
-              ></info-button>
+              ></info-button> -->
             `
           : ''}
         ${this.getAssetImageTemplate()}
 
-        <div class="asset-details-container">
+        <!-- <div class="asset-details-container">
           <div class="asset-detail">
-            <div class="asset-detail-type">
+            <!-- <div class="asset-detail-type">
               <a
                 class="asset-link"
                 href="http://${network === Network.Rinkeby
@@ -229,7 +219,7 @@ export class NftCardFrontTemplate extends LitElement {
                   border="1px solid #E2E6EF"
                 ></pill-element>
               </a>
-            </div>
+            </div> -->
             <!-- This badge is optional and must be rendered programmatically -->
             <!-- <div class="asset-detail-badge">
               <pill-element
@@ -239,14 +229,15 @@ export class NftCardFrontTemplate extends LitElement {
               ></pill-element>
             </div> -->
           </div>
-          <div class="spacer"></div>
-          <div class="asset-detail-name">
+          <!-- <div class="spacer"></div> -->
+          <!-- <div class="asset-detail-name"> 
             <a class="asset-link" href="${openseaLink}" target="_blank"
               >${name}</a
             >
-          </div>
-          ${this.getAssetPriceTemplate()}
-          <div class="asset-action-buy">${this.getButtonTemplate()}</div>
+          </div> -->
+          <!-- ${this.getAssetPriceTemplate()}  -->
+          <!-- For adding a "Buy" button -->
+          <!-- <div class="asset-action-buy">${this.getButtonTemplate()}</div> -->
         </div>
       </div>
     `
