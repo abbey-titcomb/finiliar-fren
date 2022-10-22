@@ -13,17 +13,17 @@ import './nft-card-back.ts'
 import { ButtonEvent } from './types'
 import { getProvider, networkFromString } from './utils'
 
-const HORIZONTAL_MIN_CARD_HEIGHT = '582px'
-const VERT_MIN_CARD_HEIGHT = '582px'
+const HORIZONTAL_MIN_CARD_HEIGHT = '291px'
+const VERT_MIN_CARD_HEIGHT = '291px'
 
-const VERT_CARD_HEIGHT = '582px'
-const VERT_CARD_WIDTH = '582px'
+const VERT_CARD_HEIGHT = '291px'
+const VERT_CARD_WIDTH = '291px'
 
 const VERT_CARD_WIDTH_MOBILE = '80vw'
 
-const HORIZONTAL_CARD_HEIGHT = '582px'
-const HORIZONTAL_CARD_WIDTH = '582px'
-const HORIZONTAL_CARD_MAX_WIDTH = '582px'
+const HORIZONTAL_CARD_HEIGHT = '291px'
+const HORIZONTAL_CARD_WIDTH = '291px'
+const HORIZONTAL_CARD_MAX_WIDTH = '291px'
 
 enum OrientationMode {
   Auto = 'auto',
@@ -90,8 +90,8 @@ export class NftCard extends LitElement {
       }
       .card-inner {
         position: relative;
-        width: 50%;
-        height: 50%;
+        width: 100%;
+        height: 100%;
         text-align: center;
         transition: transform 0.6s;
         transform-style: preserve-3d;

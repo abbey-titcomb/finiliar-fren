@@ -1,6 +1,6 @@
 {
   "name": "@abbey-titcomb/finiliar-fren",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "description": "Reusable, embeddable webcomponent for showing off your Finiliar.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
