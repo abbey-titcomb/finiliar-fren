@@ -1,7 +1,7 @@
 {
-  "name": "embeddable-nfts",
-  "version": "0.5.0",
-  "description": "Reusable, embeddable webcomponent for OpenSea assets.",
+  "name": "@abbey-titcomb/finiliar-fren",
+  "version": "0.1.0",
+  "description": "Reusable, embeddable webcomponent for showing off your Finiliar.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:demo": "webpack-dev-server --config ./webpack.dev.config.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ProjectOpenSea/embeddable-nfts.git"
+    "url": "git+https://github.com/abbey-titcomb/finiliar-fren"
   },
-  "author": "Taylor Dawson",
+  "author": "Abbey Titcomb",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ProjectOpenSea/embeddable-nfts/issues"
+    "url": "https://github.com/abbey-titcomb/finiliar-fren/issues"
   },
-  "homepage": "https://github.com/ProjectOpenSea/embeddable-nfts#readme",
+  "homepage": "https://github.com/abbey-titcomb/finiliar-fren#readme",
   "dependencies": {
     "lit-element": "^3.0.2",
     "lit-html": "^2.0.2",
@@ -57,5 +57,9 @@
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.3"
+  },
+  "main": "babel.config.js",
+  "directories": {
+    "example": "example"
   }
 }
