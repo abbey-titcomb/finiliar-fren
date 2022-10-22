@@ -1,5 +1,5 @@
 {
-  "name": "finiliar-fren",
+  "name": "@abbey-titcomb/finiliar-fren",
   "version": "0.1.0",
   "description": "Reusable, embeddable webcomponent for showing off your Finiliar.",
   "scripts": {
@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abbey-titcomb/finiliar-fren.git"
+    "url": "git+https://github.com/abbey-titcomb/finiliar-fren"
   },
-  "author": "Taylor Dawson",
+  "author": "Abbey Titcomb",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/abbey-titcomb/finiliar-fren/issues"
@@ -57,5 +57,9 @@
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.3"
+  },
+  "main": "babel.config.js",
+  "directories": {
+    "example": "example"
   }
 }
